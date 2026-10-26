@@ -28,10 +28,10 @@ jobs:
 
 
   # ---------- CD ----------
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
+  # deploy:
+  #   needs: test
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: Deploy application
-        run: curl "${{ secrets.RENDER_DEPLOY_HOOK }}"
+  #   steps:
+  #     - name: Deploy application
+  #       run: curl "${{ secrets.RENDER_DEPLOY_HOOK }}"
