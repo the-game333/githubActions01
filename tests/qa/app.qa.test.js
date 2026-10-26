@@ -5,7 +5,7 @@ describe("QA validation - add()", () => {
     expect(add(2, 3)).toBe(5);
   });
 
-  test("supports zero too", () => {
+  test("supports zero tooooo", () => {
     expect(add(0, 7)).toBe(7);
   });
 
