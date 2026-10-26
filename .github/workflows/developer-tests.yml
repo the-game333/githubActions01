@@ -1,0 +1,29 @@
+name: Developer Tests
+
+on:
+  push:
+    branches:
+      - developer
+  pull_request:
+    branches:
+      - developer
+
+permissions:
+  contents: read
+
+jobs:
+  developer-tests:
+    name: Developer tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Run developer tests
+        run: npm test

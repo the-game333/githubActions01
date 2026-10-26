@@ -1,0 +1,16 @@
+{
+  "name": "github-actions-demo",
+  "version": "1.0.0",
+  "description": "Basic project for learning GitHub Actions",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "test:qa": "jest --runInBand tests/qa"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testRunner": "jest-circus/runner"
+  }
+}
